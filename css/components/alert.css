@@ -6,7 +6,7 @@
     border-radius: 4px;
     font-size: 1.25rem;
     padding: 0.5rem;
-    overflow-wrap: anywhere; /* for responsiveness */
+    overflow-wrap: break-word; /* for responsiveness */
 }
 
 /* alerts - based on colors */
