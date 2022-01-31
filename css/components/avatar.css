@@ -1,5 +1,5 @@
-@import url(../../css/utilities/color.css);
-@import url(../../css/base/reset.css);
+@import url(../utilities/color.css);
+@import url(../base/reset.css);
 
 .avatar{
     width: 4rem;
