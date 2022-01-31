@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('../../css/base/reset.css');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading{
+    font-weight: bolder;
+    display: block;
+}
+
+.h5{
+    line-height: 2;
+    font-size: 0.5rem;
+}
+
+.h4{
+    line-height: 1.3;
+    font-size: 1rem;
+}
+
+.h3{
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+
+.h2{
+    line-height: 1.25;
+    font-size: 2rem;
+}
+
+.h1{
+    line-height: 1.3;
+    font-size: 3rem;
+}
+
+.txt{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.txt-l{
+    font-size: large;
+}
+
+.txt-m{
+    font-size: medium;
+}
+
+.txt-s{
+    font-size: small;
+}
+
+.txt-bolder{
+    font-weight: bolder;
+}
+
+.txt-bold{
+    font-weight: bold;
+}
+
+.txt-light{
+    font-weight: lighter;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-right{
+    text-align: right;
+}
