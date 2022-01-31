@@ -22,6 +22,7 @@
 .avatar-img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 /* avatars based on sizes - xs, sm, md, lg, xl */
