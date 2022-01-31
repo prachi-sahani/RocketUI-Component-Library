@@ -1,10 +1,12 @@
 @import url(../base/reset.css);
 @import url(../utilities/color.css);
+@import url(../helpers/typography.css);
+
 
 .alert{
     border: 1px solid;
     border-radius: 4px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0.5rem;
     overflow-wrap: break-word; /* for responsiveness */
 }
