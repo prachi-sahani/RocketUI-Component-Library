@@ -1,0 +1,91 @@
+@import url(../utilities/color.css);
+@import url(../base/reset.css);
+
+.avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* for avatar with a icon */
+.avatar-icon{
+    background-color: var(--primary-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-100);
+}
+
+/* for avatar with an image */
+.avatar-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* avatars based on sizes - xs, sm, md, lg, xl */
+.avatar-xs{
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar-sm{
+    width: 3rem;
+    height: 3rem;
+}
+
+.avatar-md{
+    width: 5rem;
+    height: 5rem;
+}
+
+.avatar-lg{
+    width: 6rem;
+    height: 6rem;
+}
+.avatar-xl{
+    width: 7rem;
+    height: 7rem;
+}
+
+/* for square avatar */
+.avatar-square{
+    border-radius: 0;
+}
+
+/* for a group of avatars - will wrap in case of overflow*/
+.avatar-group{
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* for stacked avatars */
+.avatar-stack{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* styling for stacking based on avatar size */
+.avatar-stack .avatar:not(:first-child){  
+    margin-right: -1.5rem; 
+}
+.avatar-stack .avatar-sm:not(:first-child){
+    margin-right: -1rem;
+}
+.avatar-stack .avatar-xs:not(:first-child){
+    margin-right: -0.5rem;
+}
+.avatar-stack .avatar-md:not(:first-child){
+    margin-right: -2rem;
+}
+.avatar-stack .avatar-lg:not(:first-child){
+    margin-right: -2.5rem;
+}
+.avatar-stack .avatar-xl:not(:first-child){
+    margin-right: -3rem;
+}
