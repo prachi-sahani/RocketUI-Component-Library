@@ -89,3 +89,33 @@
 .avatar-stack .avatar-xl:not(:first-child){
     margin-right: -3rem;
 }
+
+@media (max-width: 600px) {
+    .avatar{
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+    .avatar-xs{
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+    
+    .avatar-sm{
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+    
+    .avatar-md{
+        width: 4.25rem;
+        height: 4.25rem;
+    }
+    
+    .avatar-lg{
+        width: 5.25rem;
+        height: 5.25rem;
+    }
+    .avatar-xl{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+}
