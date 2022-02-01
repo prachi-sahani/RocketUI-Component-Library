@@ -1,0 +1,85 @@
+@import url(../base/reset.css);
+@import url(../utilities/color.css);
+@import url(../helpers/typography.css);
+
+
+.alert{
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    overflow-wrap: break-word; /* for responsiveness */
+}
+
+/* alerts - based on colors */
+.alert-primary{
+    color: var(--primary-900);
+    border-color: var(--primary-900);
+}
+
+.alert-danger{
+    color: var(--red-600);
+    border-color: var(--red-600);
+}
+
+.alert-success{
+    color: var(--green-600);
+    border-color: var(--green-600);
+}
+
+.alert-info{
+    color: var(--blue-600);
+    border-color: var(--blue-600);
+}
+
+.alert-warn{
+    color: var(--orange-600);
+    border-color: var(--orange-600);
+}
+
+/* alert with icons */
+.alert-icon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* for responsiveness */
+    gap: 0.5rem;
+}
+
+.alert-icon .icon{
+    font-size: 1.25rem;
+}
+
+/* filled alerts - based on colors */
+.alert-fill.alert-primary{
+    background-color: var(--primary-600);
+    color: var(--black-050);
+}
+.alert-fill.alert-danger{
+    background-color: var(--red-600);
+    color: var(--black-050);
+}
+.alert-fill.alert-warn{
+    background-color: var(--orange-600);
+    color: var(--black-050);
+}
+.alert-fill.alert-success{
+    background-color: var(--green-600);
+    color: var(--black-050);
+}
+.alert-fill.alert-info{
+    background-color: var(--blue-600);
+    color: var(--black-050);
+}
+
+@media (max-width: 600px) {
+    .alert{
+        font-size: 0.75rem;
+        padding: 0.25rem;
+        object-fit: unset;
+    }
+
+    .alert-icon .icon{
+        font-size: 1rem;
+    }
+
+}
