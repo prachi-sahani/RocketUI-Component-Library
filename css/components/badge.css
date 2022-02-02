@@ -1,0 +1,136 @@
+@import url(../helpers/spacing.css);
+@import url(../base/reset.css);
+@import url(../utilities/color.css);
+@import url(../helpers/color.css);
+@import url(../../css/components/avatar.css);
+
+/*parent container  */
+.badge{
+    position: relative;
+    display: inline-block;
+}
+
+/* common class for avatars with badge */
+.badge-avatar{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    border: 2px solid var(--black-inverted);
+}
+
+/* different types of badges for avatar - online, offline, busy */
+.badge-offline{
+    background-color: var(--black-400);
+}
+.badge-online{
+    background-color: var(--green-500);
+}
+.badge-busy{
+    background-color: var(--red-500);
+}
+
+/* styling for avatars of different sizes */
+.avatar-xs~.badge-avatar{
+    bottom: 2%;
+    right: 2%;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.avatar-sm~.badge-avatar{
+    bottom: 3%;
+    right: 3%;
+    height: 0.6rem;
+    width: 0.6rem;
+}
+
+.avatar-md~.badge-avatar{
+    height: 1rem;
+    width: 1rem;
+}
+
+.avatar-lg~.badge-avatar{
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.avatar-xl~.badge-avatar{
+    bottom: 6%;
+    right: 6%;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+/* styling for badges on icon*/
+.badge-icon-text{
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    font-size: 0.4em;
+    text-align: center;
+    height: 1em;
+    min-width: 1em;
+    border-radius: 1em;
+    padding: 0.3em;
+    background-color: var(--red-500);    
+    color: var(--black-050);
+}
+
+/* styling for different sizes of icon */
+/* changing font-size of icon based on type of badge - sm, md, lg*/
+.badge-icon-sm,.badge-icon-sm .badge-icon{
+    font-size: 1.75rem;
+}
+
+.badge-icon-md,.badge-icon-md .badge-icon{
+    font-size: 2rem;
+}
+
+.badge-icon-lg,.badge-icon-lg .badge-icon{
+    font-size: 2.25rem;
+}
+
+/* styling for smaller screens */
+@media (max-width: 600px) {
+    .badge-avatar{
+        border: 1.5px solid var(--black-inverted);
+    }
+    .avatar-xs~.badge-avatar{
+        height: 0.4rem;
+        width: 0.4rem;
+    }
+    .avatar-sm~.badge-avatar{
+        height: 0.5rem;
+        width: 0.5rem;
+    }
+    
+    .avatar-md~.badge-avatar{
+        height: 0.75rem;
+        width: 0.75rem;
+    }
+    
+    .avatar-lg~.badge-avatar{
+        height: 1rem;
+        width: 1rem;
+    }
+    
+    .avatar-xl~.badge-avatar{
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+
+    .badge-icon-sm,.badge-icon-sm .badge-icon{
+        font-size: 1.5rem;
+    }
+
+    .badge-icon-md,.badge-icon-md .badge-icon{
+        font-size: 1.75rem;
+    }
+    
+    .badge-icon-lg,.badge-icon-lg .badge-icon{
+        font-size: 2rem;
+    }    
+}
