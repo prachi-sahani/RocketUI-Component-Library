@@ -1,0 +1,45 @@
+@import url(../base/reset.css);
+@import url(../helpers/typography.css);
+@import url(../helpers/color.css);
+
+
+
+.input-group, .textarea-group{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.input-outline, .textarea-outline{
+    margin-top: 3px;
+    margin-bottom: 2px;
+    padding: 8px;
+    outline: 2px solid transparent;
+    border: 2px solid var(--black-600);
+    border-radius: 4px;
+}
+
+.textarea-outline{
+    resize: vertical;
+}
+
+.input-outline:focus, .textarea-outline:focus{
+    border-color: var(--blue-800);   
+}
+
+.input-error, .textarea-error, .input-error:focus, .textarea-error:focus{
+    border-color: var(--red-600);
+}
+
+.input-success, .textarea-success, .input-success:focus, .textarea-success:focus{
+    border-color: var(--green-700);
+}
+
+.msg-error{
+    color: var(--red-600);
+}
+
+.msg-success{
+    color: var(--green-700);
+}
+ 
