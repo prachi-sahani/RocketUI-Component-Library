@@ -11,8 +11,7 @@
 }
 
 .input-outline, .textarea-outline{
-    margin-top: 3px;
-    margin-bottom: 2px;
+    margin: 3px 0 2px;
     padding: 8px;
     outline: 2px solid transparent;
     border: 2px solid var(--black-600);
