@@ -3,6 +3,7 @@
 
 /* styling for basic button */
 .btn-basic{
+    margin: 0.25rem;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     background-color: var(--black-600);
@@ -24,7 +25,7 @@
 .btn-outline-basic{
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    background-color: var(--black-inverted);
+    background-color: transparent;
     color: var(--black-600);
     border: 1px solid var(--black-600);
     cursor: pointer;
@@ -36,7 +37,7 @@
 }
 
 .btn-outline-basic:disabled{
-    background-color: var(--black-inverted);
+    background-color: transparent;
     color: var(--black-500);
     border: 1px solid var(--black-500);
 }
@@ -62,7 +63,7 @@
 
 .btn-icon{
     color: var(--black-600);
-    background-color: var(--black-inverted);
+    background-color: transparent
 }
 
 .btn-icon:hover{
@@ -76,7 +77,7 @@
 
 .btn-link{
     color: var(--black-600);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -119,7 +120,7 @@
 
 .btn-outline-primary{
     color: var(--primary-900);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--primary-900);
 }
 
@@ -131,7 +132,7 @@
 
 .btn-outline-primary:disabled{
     color: var(--primary-600);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--primary-600);
 }
 
@@ -172,7 +173,7 @@
 
 .btn-outline-success{
     color: var(--green-700);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--green-700);
 }
 
@@ -184,7 +185,7 @@
 
 .btn-outline-success:disabled{
     color: var(--green-300);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--green-300);
 }
 
@@ -224,7 +225,7 @@
 
 .btn-outline-danger{
     color: var(--red-700);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--red-700);
 }
 
@@ -236,7 +237,7 @@
 
 .btn-outline-danger:disabled{
     color: var(--red-300);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--red-300);
 }
 
@@ -276,7 +277,7 @@
 
 .btn-outline-info{
     color: var(--blue-800);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--blue-800);
 }
 
@@ -288,7 +289,7 @@
 
 .btn-outline-info:disabled{
     color: var(--blue-300);
-    background-color: var(--black-inverted);
+    background-color: transparent;
     border-color: var(--blue-300);
 }
 
