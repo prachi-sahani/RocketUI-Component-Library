@@ -1,0 +1,90 @@
+@import url(../base/reset.css);
+@import url(../helpers/typography.css);
+@import url(../utilities/color.css);
+@import url(../components/button.css);
+@import url(../components/list.css);
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  color: var(--primary-900);
+  background-color: var(--black-inverted);
+  position: sticky;
+  top: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* menu icon - only for smaller screens */
+.navbar-menu {
+  display: none;
+}
+
+.navbar-brand {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* includes navbar list and action buttons  */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0 0.5rem;
+}
+
+.navbar-action {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+
+.navbar-nav-list {
+  padding: 0.5rem;
+}
+
+.navbar-nav-list .list-item {
+  cursor: pointer;
+  font-size: medium;
+}
+
+.navbar-nav-list .list-item:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    display: none;
+  }
+  /* styling for menu icon and dropdown */
+  .navbar-menu {
+    display: block;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+
+  .navbar-menu-btn {
+    margin: 0; /* overriding default button style */
+  }
+
+  .navbar-menu-list {
+    box-shadow: 1px 1px 2px 1px var(--black-050);
+    border-radius: 4px;
+    position: absolute;
+    right: 1rem;
+    background-color: var(--black-inverted);
+  }
+
+  .navbar-menu-list .list-item {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-menu-list .list-item:hover {
+    background-color: var(--primary-050);
+  }
+}
