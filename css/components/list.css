@@ -10,12 +10,12 @@
 }
 
 .list-group .list-item {
-  padding: 0.5rem 0;
+  padding: 8px 0;
 }
 
 .list-group-inline .list-item {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 8px;
 }
 
 /* styling for bulleted list */
@@ -31,12 +31,12 @@
 }
 
 .list-group-bulleted .list-item {
-  padding: 0.25rem 0;
+  padding: 4px 0;
 }
 
 /* stacked lists for notifications */
 .list-group-stacked .list-item {
-  padding: 0.5rem;
+  padding: 8px;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .list-w-icon .list-icon {
