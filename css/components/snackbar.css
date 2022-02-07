@@ -1,0 +1,67 @@
+@import url(../base/reset.css);
+@import url(../utilities/color.css);
+@import url(../components/button.css);
+
+/* common styling for all snackbars */
+.snackbar {
+  position: fixed;
+  width: 33vw;
+  padding: 6px 10px;
+  background-color: var(--black-700);
+  color: var(--black-100);
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.snackbar-top-right {
+  top: 1rem;
+  right: 1rem;
+}
+
+.snackbar-bottom-right {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.snackbar-top-left {
+  top: 1rem;
+  left: 1rem;
+}
+
+.snackbar-bottom-left {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.snackbar-top-center {
+  top: 1rem;
+  left: 33.5%;
+}
+
+.snackbar-bottom-center {
+  bottom: 1rem;
+  left: 33.5%;
+}
+
+.snackbar-actions {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* minor modification in styling of button used in snackbar */
+.snackbar-actions .btn:hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .snackbar {
+    width: 70%;
+  }
+
+  .snackbar-bottom-center,
+  .snackbar-top-center {
+    left: 15%;
+  }
+}
