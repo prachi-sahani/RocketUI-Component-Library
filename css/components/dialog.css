@@ -1,0 +1,42 @@
+@import url(../base/reset.css);
+@import url(../utilities/color.css);
+@import url(../helpers/typography.css);
+@import url(../components/button.css);
+@import url(../components/list.css);
+
+
+.dialog-window {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.32); /* translucent background for overlay effect */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-box{
+  background-color: var(--black-inverted);
+  border-radius: 4px;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.141), 0 9px 46px 8px rgba(0, 0, 0, 0.122);
+  max-height: 90%;
+  max-width: 90%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dialog-footer{
+  text-align: right;
+}
+
+.dialog-body{
+  padding:8px 0;
+  overflow: auto;
+}
