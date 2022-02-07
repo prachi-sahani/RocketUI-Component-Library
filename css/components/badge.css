@@ -1,8 +1,7 @@
-@import url(../helpers/spacing.css);
 @import url(../base/reset.css);
 @import url(../utilities/color.css);
 @import url(../helpers/color.css);
-@import url(../../css/components/avatar.css);
+@import url(../components/avatar.css);
 
 /*parent container  */
 .badge{
@@ -13,8 +12,8 @@
 /* common class for avatars with badge */
 .badge-avatar{
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 6%;
+    right: 6%;
     height: 0.75rem;
     width: 0.75rem;
     border-radius: 50%;
@@ -34,15 +33,15 @@
 
 /* styling for avatars of different sizes */
 .avatar-xs~.badge-avatar{
-    bottom: 2%;
-    right: 2%;
+    bottom: 4.5%;
+    right: 4.5%;
     height: 0.5rem;
     width: 0.5rem;
 }
 
 .avatar-sm~.badge-avatar{
-    bottom: 3%;
-    right: 3%;
+    bottom: 5%;
+    right: 5%;
     height: 0.6rem;
     width: 0.6rem;
 }
@@ -58,8 +57,8 @@
 }
 
 .avatar-xl~.badge-avatar{
-    bottom: 6%;
-    right: 6%;
+    bottom: 7%;
+    right: 7%;
     height: 1.25rem;
     width: 1.25rem;
 }
@@ -71,12 +70,14 @@
     left: 50%;
     font-size: 0.4em;
     text-align: center;
-    height: 1em;
-    min-width: 1em;
+    height: 1.4em; 
+    min-width: 1.4em;
     border-radius: 1em;
-    padding: 0.3em;
+    padding: 0.2em;
     background-color: var(--red-500);    
     color: var(--black-050);
+    /* display: flex;
+    align-items: center; */
 }
 
 /* styling for different sizes of icon */
