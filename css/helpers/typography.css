@@ -8,6 +8,7 @@ body {
 .heading {
   font-weight: bolder;
   display: block;
+  margin-bottom: 4px;
 }
 
 .h5 {
@@ -38,18 +39,19 @@ body {
 .txt {
   font-size: 1rem;
   margin: 0.5rem 0;
+  line-height: 1.25;
 }
 
 .txt-lg {
-  font-size: large;
+  font-size: 1.75rem;
 }
 
 .txt-md {
-  font-size: medium;
+  font-size: 1.25rem;
 }
 
 .txt-sm {
-  font-size: small;
+  font-size: 0.75rem;
 }
 
 .txt-bolder {
@@ -77,5 +79,13 @@ body {
 }
 
 .txt-gray {
-  color: var(--black-600);
+  color: var(--black-500);
+}
+
+.txt-primary {
+  color: var(--primary-900);
+}
+
+.txt-white{
+  color: var(--black-inverted);
 }
