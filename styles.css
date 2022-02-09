@@ -79,6 +79,7 @@ body {
 .btn-get-started {
   width: fit-content;
   margin: 1rem 0;
+  text-decoration: none;
 }
 
 .landing-page-part2 {
