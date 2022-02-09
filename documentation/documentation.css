@@ -22,6 +22,8 @@ hr {
 .navbar-brand-doc {
   margin-bottom: 0;
   padding: 0 0.25rem;
+  height: 45px;
+
 }
 
 .navbar-action-doc {
@@ -31,10 +33,17 @@ hr {
 .btn-navbar-doc {
   border: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 .btn-navbar-doc:hover {
   background-color: var(--primary-050);
+  color: var(--primary-900);
+}
+
+.navbar-menu-list-doc .list-item a,
+.navbar-menu-list-doc .list-item a:visited {
+  text-decoration: none;
   color: var(--primary-900);
 }
 
@@ -45,7 +54,7 @@ hr {
 .sidenav {
   height: calc(100vh - 58px);
   overflow-y: auto;
-  flex-basis: 200px;
+  flex-basis: 240px;
   flex-shrink: 0;
   box-shadow: 1px 1px 2px 1px var(--black-050);
 }
@@ -70,26 +79,13 @@ hr {
 }
 
 .components {
-  height: calc(100vh - 58px);
+  height: calc(100vh - 3.625rem);
   overflow-y: auto;
   padding: 0.5rem;
-  /* flex-basis: 75%; */
 }
 
 .component-details {
   padding: 0.5rem;
-}
-
-.footer {
-  display: none;
-  background-color: var(--primary-900);
-  text-align: center;
-  color: var(--black-050);
-  padding: 0.5rem;
-}
-
-.footer-icons {
-  height: 2rem;
 }
 
 .component-description {
@@ -128,7 +124,7 @@ hr {
 }
 
 .image-responsive {
-  height: 200px;
+  height: 12.5rem;
 }
 
 .snackbar {
@@ -145,10 +141,11 @@ hr {
   .navbar-menu-btn-doc {
     padding: 0.25rem;
   }
+
   .sidenav {
     display: none;
     position: absolute;
-    width: 200px;
+    width: 12.5rem;
     left: 0;
     z-index: 1;
     background-color: var(--black-inverted);

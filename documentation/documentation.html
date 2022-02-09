@@ -17,15 +17,15 @@
         <button class="sidenav-menu-btn btn-icon btn-outline-primary material-icons btn-md">
             double_arrow
         </button>
-        <div class="navbar-brand navbar-brand-doc heading h3">SampleUI</div>
+        <img class="navbar-brand navbar-brand-doc heading h3" src="../assets/RocketUI.png" alt="">
         <div class="navbar-nav">
             <div class="navbar-action navbar-action-doc">
-                <button class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
-                    <i class="material-icons">description</i>Docs
-                </button>
-                <button class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
+                <a href="/" class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
+                    <i class="material-icons">home</i>Home
+                </a>
+                <a href="https://github.com/prachi-sahani/component-library" class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
                     <img src="../assets/github-nav.png" alt="" class="img-github" />Github
-                </button>
+                </a>
             </div>
         </div>
         <div class="navbar-menu">
@@ -33,8 +33,10 @@
                 more_vert
             </button>
             <ul class="navbar-menu-list-doc navbar-menu-list list-group-stacked">
-                <li class="list-item">Documentation</li>
-                <li class="list-item">Github</li>
+                <li class="list-item"><a href="/">Home</a>
+                </li>
+                <li class="list-item"><a href="https://github.com/prachi-sahani/component-library">Github</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -46,12 +48,10 @@
             <ul class="list-group-stacked">
                 <br>
                 <p class="txt txt-bold sidenav-heading">Getting started</p>
-                <li class="list-item"><a href="#installation">Installation</a></li>
-                <!-- <li class="list-item"><a href="#color">Color</a></li> -->
+                <li class="list-item"><a href="#introduction">Introduction</a></li>
                 <li class="list-item"><a href="#typography">Typography</a></li>
                 <li class="list-item"><a href="#spacing">Spacing</a></li>
                 <li class="list-item"><a href="#grids">Grids</a></li>
-                <!-- <li class="list-item"><a href="#colors">Colors</a></li> -->
                 <p class="txt txt-bold sidenav-heading">Components</p>
                 <li class="list-item"><a href="#alerts">Alerts</a></li>
                 <li class="list-item"><a href="#avatars">Avatars</a></li>
@@ -73,25 +73,33 @@
             <!-- Installation starts -->
             <div class="component-details">
                 <div class="component-description">
-                    <h2 class="heading h2" id="installation">Installation</h2>
+                    <h2 class="heading h2" id="installation">Introduction</h2>
 
+                    <p class="txt"><strong class="txt txt-primary">RocketUI</strong> is a free, open source framework
+                        that provides ready-to-use frontend components that you can easily combine to build responsive
+                        web interfaces.</p><br>
+                    <h3 class="heading h3">Installation</h3>
                     <p class="txt">
-                        Looking to quickly add <strong class="txt txt-primary">RocketUI</strong> to your project? Copy the Link given below and paste it in
-                        the <strong class="txt txt-primary">&lt;head&gt;</strong> tag of your html, above all other style
+                        Looking to quickly add <strong class="txt txt-primary">RocketUI</strong> to your project? Copy
+                        the Link given below and paste it in
+                        the <strong class="txt txt-primary">&lt;head&gt;</strong> tag of your html, above all other
+                        style
                         sheets.
                     </p>
                     <script src="https://gist.github.com/prachi-sahani/14d6c773c0de53478da832a38833536c.js"></script>
                     <br>
                     <p class="txt">
-                        RocketUI uses <a class="txt txt-primary txt-bold" target="_blank" href="https://fonts.google.com/icons">material icons</a>. Copy the given link
-                        and paste it in the <strong class="txt txt-primary">&lt;head&gt;</strong>  tag before the link
+                        RocketUI uses <a class="txt txt-primary txt-bold" target="_blank"
+                            href="https://fonts.google.com/icons">material icons</a>. Copy the given link
+                        and paste it in the <strong class="txt txt-primary">&lt;head&gt;</strong> tag before the link
                         mentioned above.
                     </p>
                     <script src="https://gist.github.com/prachi-sahani/d1decb11e7f680e84e8209fe5e077888.js"></script>
                 </div>
             </div>
             <!-- Installation ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- Typography starts -->
             <div class="component-details">
                 <div class="component-description">
@@ -150,13 +158,14 @@
                 </div>
             </div>
             <!-- Typography ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- Spacing starts -->
             <div class="component-details">
                 <div class="component-description">
                     <h2 class="heading h2" id="spacing">Spacing</h2>
                     <p class="txt">
-                        Apply margin and padding to elements
+                        To apply margin and padding to elements
                     </p>
                     <p class="txt">
                         Different margins and paddings can be applied to the elements using class prefixes like <strong
@@ -170,23 +179,25 @@
                     <h3 class="heading h3">Margin and padding</h3>
                     <div class="component-demo">
                         <p class="bg-blue txt-white txt-gray m-0">Margin-0</p><br>
-                        <p class="bg-green txt-white txt-gray mx-1">Margin-1</p><br>
-                        <p class="bg-primary txt-white txt-gray my-2">Margin-2</p><br>
-                        <p class="bg-blue txt-white txt-gray p-3">Margin-3</p><br>
-                        <p class="bg-red txt-white txt-gray py-4">Margin-4</p><br>
-                        <p class="bg-primary txt-white txt-gray px-5">Margin-5</p><br>
-                        <p class="bg-green txt-white txt-gray m-auto auto-width">Margin-auto</p>
+                        <p class="bg-green txt-white txt-gray mx-1">MarginX-1</p><br>
+                        <p class="bg-primary txt-white txt-gray my-2">MarginY-2</p><br>
+                        <p class="bg-blue txt-white txt-gray p-3">Padding-3</p><br>
+                        <p class="bg-red txt-white txt-gray py-4">PaddingY-4</p><br>
+                        <p class="bg-primary txt-white txt-gray px-5">PaddingX-5</p><br>
+                        <p class="bg-green txt-white txt-gray m-auto" style="width: 50%;">Margin-auto</p>
                     </div>
+                    <script src="https://gist.github.com/prachi-sahani/7fd0c32f518a039d11a8ce580714585f.js"></script>
                 </div>
             </div>
             <!-- Spacing ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- Grid component starts -->
             <div class="component-details">
                 <div class="component-description">
                     <h2 class="heading h2" id="grids">Grids</h2>
                     <p class="txt">
-                        creates visual consistency between layouts while allowing flexibility across a wide variety of
+                        Create visual consistency between layouts while allowing flexibility across a wide variety of
                         designs
                     </p>
                     <p class="txt">
@@ -194,7 +205,7 @@
                         responsive. Number of columns covered for different screen sizes can also be modified using
                         class prefixes like <strong class="txt txt-primary">col-lg-</strong>, <strong
                             class="txt txt-primary">col-md-</strong> and <strong
-                            class="txt txt-primary">col-sm-</strong>
+                            class="txt txt-primary">col-sm-</strong>.
                     </p>
                 </div>
                 <div class="component-examples">
@@ -243,7 +254,8 @@
                 </div>
             </div>
             <!-- Grid component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- Alert component starts -->
             <div class="component-details">
                 <div class="component-description">
@@ -552,8 +564,8 @@
                     <div class="component-demo">
                         <button class="btn-basic">Basic button</button>
                         <button class="btn-basic" disabled>Basic button</button>
-                        <button class="btn-outline-basic">Basic button</button>
-                        <button class="btn-outline-basic" disabled>Basic button</button>
+                        <button class="btn-outline-basic">Basic Outline button</button>
+                        <button class="btn-outline-basic" disabled>Basic Outline button</button>
                         <a href="" class="btn-link">Link Button</a>
                         <br><br>
                         <button class="btn-icon material-icons">shopping_cart</button>
@@ -628,11 +640,11 @@
                         <button class="btn-outline-basic btn-w-icon btn-sm"><i
                                 class="material-icons icon">shopping_cart</i>Basic button</button>
                         <button class="btn-basic btn-outline-primary btn-w-icon"><i
-                                class="material-icons icon">shopping_cart</i>Basic button</button>
+                                class="material-icons icon">shopping_cart</i>Basic Outline button</button>
                         <button class="btn-basic btn-primary btn-w-icon btn-md"><i
                                 class="material-icons icon">shopping_cart</i>Basic button</button>
                         <button class="btn-basic btn-outline-danger btn-w-icon btn-lg"><i
-                                class="material-icons icon">shopping_cart</i>Basic button</button>
+                                class="material-icons icon">shopping_cart</i>Basic Outline button</button>
                     </div>
                     <script src="https://gist.github.com/prachi-sahani/1b0559b9134db908f86c4296dbcdc6ea.js"></script>
 
@@ -651,13 +663,14 @@
                 </div>
             </div>
             <!-- button component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- card component starts-->
             <div class="component-details">
                 <div class="component-description">
                     <h2 class="heading h2" id="cards">Cards</h2>
                     <p class="txt">
-                        Surfaces that display content and actions on a single topic
+                        Surface that displays content and action on a single topic
                     </p>
                     <p class="txt">
                         All cards will have a common <strong class="txt txt-primary">card</strong> class. Type of cards
@@ -834,7 +847,8 @@
                 </div>
             </div>
             <!-- card-component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- dialog component starts -->
             <div class="component-details">
                 <div class="component-description">
@@ -881,7 +895,8 @@
                 </div>
             </div>
             <!-- dialog-component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- image component starts -->
             <div class="component-details">
                 <div class="component-description">
@@ -913,7 +928,8 @@
                 </div>
             </div>
             <!-- image component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- input component starts -->
             <div class="component-details">
                 <div class="component-description">
@@ -985,7 +1001,8 @@
                 </div>
             </div>
             <!-- input component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- list component starts -->
             <div class="component-details">
                 <div class="component-description">
@@ -998,7 +1015,7 @@
                         One can use <strong class="txt txt-primary">list-group</strong>, <strong
                             class="txt txt-primary">list-group-bullteted</strong>, <strong
                             class="txt txt-primary">list-group-inline</strong> and <strong
-                            class="txt txt-primary">list-group-stacked</strong> classes as pr the requirement. <br>
+                            class="txt txt-primary">list-group-stacked</strong> classes as per the requirement. <br>
                         List items can also have images, avatars and two-line texts. <strong
                             class="txt txt-primary">list-item</strong>, <strong
                             class="txt txt-primary">list-item</strong>, <strong
@@ -1122,15 +1139,15 @@
                         <ul class="list-group-stacked">
                             <li class="list-item">
                                 <p class="txt ">Line 1</p>
-                                <p class="txt txt-sm txt-gray">Subline 1</p>
+                                <p class="txt txt-sm txt-gray">Sub-line 1</p>
                             </li>
                             <li class="list-item">
                                 <p class="txt">Line 2</p>
-                                <p class="txt txt-sm txt-gray">Subline 2</p>
+                                <p class="txt txt-sm txt-gray">Sub-line 2</p>
                             </li>
                             <li class="list-item">
                                 <p class="txt">Line 3</p>
-                                <p class="txt txt-sm txt-gray">Subline 3</p>
+                                <p class="txt txt-sm txt-gray">Sub-line 3</p>
                             </li>
                         </ul>
                     </div>
@@ -1143,21 +1160,21 @@
                                 <i class="material-icons list-icon">shopping_bag</i>
                                 <div class="list-item-text">
                                     <p class="txt">Line 1</p>
-                                    <p class="txt txt-sm txt-gray">Subline 1</p>
+                                    <p class="txt txt-sm txt-gray">Sub-line 1</p>
                                 </div>
                             </li>
                             <li class="list-item list-w-icon">
                                 <i class="material-icons list-icon">shopping_bag</i>
                                 <div class="list-item-text">
                                     <p class="txt">Line 2</p>
-                                    <p class="txt txt-sm txt-gray">Subline 2</p>
+                                    <p class="txt txt-sm txt-gray">Sub-line 2</p>
                                 </div>
                             </li>
                             <li class="list-item list-w-icon">
                                 <i class="material-icons list-icon">shopping_bag</i>
                                 <div class="list-item-text">
                                     <p class="txt">Line 3</p>
-                                    <p class="txt txt-sm txt-gray">Subline 3</p>
+                                    <p class="txt txt-sm txt-gray">Sub-line 3</p>
                                 </div>
                             </li>
                         </ul>
@@ -1173,7 +1190,7 @@
                                 </div>
                                 <div class="list-item-text">
                                     <p class="txt txt-md">Line 1</p>
-                                    <p class="txt txt-sm txt-gray">Subline 1</p>
+                                    <p class="txt txt-sm txt-gray">Sub-line 1</p>
                                 </div>
                             </li>
                             <li class="list-item list-w-avatar">
@@ -1182,7 +1199,7 @@
                                 </div>
                                 <div class="list-item-text">
                                     <p class="txt txt-md">Line 2</p>
-                                    <p class="txt txt-sm txt-gray">Subline 2</p>
+                                    <p class="txt txt-sm txt-gray">Sub-line 2</p>
                                 </div>
                             </li>
                             <li class="list-item list-w-avatar">
@@ -1191,7 +1208,7 @@
                                 </div>
                                 <div class="list-item-text">
                                     <p class="txt">Line 3</p>
-                                    <p class="txt txt-sm txt-gray">Subline 3</p>
+                                    <p class="txt txt-sm txt-gray">Sub-line 3</p>
                                 </div>
                             </li>
                         </ul>
@@ -1200,13 +1217,14 @@
                 </div>
             </div>
             <!-- list component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- navbar component starts -->
             <div class="component-details">
                 <div class="component-description">
                     <h2 class="heading h2" id="navigation">Navigation</h2>
                     <p class="txt">
-                        List of navigation links users that can find in the Header on every page
+                        List of navigation links that users can find in the Header of every page
                     </p>
                     <p class="txt">
                         Navigation bar includes brand name(or logo), list of navigations, actions icons and buttons.
@@ -1246,19 +1264,20 @@
                 </div>
             </div>
             <!-- navbar component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- ratings component starts -->
             <div class="component-details">
                 <div class="component-description">
                     <h2 class="heading h2" id="ratings">Ratings</h2>
                     <p class="txt">
-                        Provide insight regarding others' opinions and experiences, and can allow the user to submit a
+                        Provide insights regarding others' opinions and experiences, and can allow the user to submit a
                         rating of their own
                     </p>
                     <p class="txt">
                         <strong class="txt txt-primary">rating</strong> and <strong
                             class="txt txt-primary">rating-read-only</strong> classes can be used based on the
-                        application.
+                        requirement.
                     </p>
                 </div>
                 <div class="component-examples">
@@ -1298,13 +1317,14 @@
                 </div>
             </div>
             <!-- ratings component ends -->
-            <hr>
+            <br>
+            <hr><br>
             <!-- snackbar component starts -->
             <div class="component-details">
                 <div class="component-description">
                     <h2 class="heading h2" id="snackbar">Snackbar</h2>
                     <p class="txt">
-                        Serves as a feedback & confirmation mechanism after the user takes an action
+                        Serves as a feedback and confirmation mechanism after the user takes an action
                     </p>
                     <p class="txt">
                         All snackbars will have <strong class="txt txt-primary">snackbar</strong> class. Snackbars can
@@ -1342,22 +1362,7 @@
     <div class="scroll-to-top">
         <button class="btn-fab btn-primary material-icons">arrow_upward</button>
     </div>
-    <!-- footer -->
-    <footer class="footer">
-        <p class="txt">Created by Prachi Sahani</p>
-        <ul class="list-group-inline">
-            <li class="list-item">
-                <a href=""><img class="footer-icons" src="../assets/github-footer.png" alt="" /></a>
-            </li>
-            <li class="list-item">
-                <a href=""><img class="footer-icons" src="../assets/twitter.png" alt="" /></a>
-            </li>
-            <li class="list-item">
-                <a href=""><img class="footer-icons" src="../assets/linkedin.png" alt="" /></a>
-            </li>
-        </ul>
-        <!-- <p class="txt">&copy; 2022</p> -->
-    </footer>
+
 
     <script src="./documentation.js"></script>
 </body>
