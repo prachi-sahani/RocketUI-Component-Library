@@ -3,6 +3,11 @@
     overflow-wrap: break-word;
 }
 
+.grid-item{
+    min-width: 0;
+    min-height: 0;
+}
+
 .grid-3{
     grid-template-columns: repeat(3,1fr);
 }
