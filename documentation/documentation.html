@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./documentation.css" />
+    <title>Documentation</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-doc">
+        <button class="sidenav-menu-btn btn-icon btn-outline-primary material-icons btn-md">
+            double_arrow
+        </button>
+        <div class="navbar-brand navbar-brand-doc heading h3">SampleUI</div>
+        <div class="navbar-nav">
+            <div class="navbar-action navbar-action-doc">
+                <button class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
+                    <i class="material-icons">description</i>Docs
+                </button>
+                <button class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
+                    <img src="../assets/github-nav.png" alt="" class="img-github" />Github
+                </button>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <button class="navbar-menu-btn-doc navbar-menu-btn btn-icon btn-outline-primary material-icons btn-md">
+                more_vert
+            </button>
+            <ul class="navbar-menu-list-doc navbar-menu-list list-group-stacked">
+                <li class="list-item">Documentation</li>
+                <li class="list-item">Github</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="content">
+        <!-- side navbar -->
+        <aside class="sidenav">
+            <ul class="list-group-stacked">
+                <br>
+                <p class="txt txt-bold sidenav-heading">Getting started</p>
+                <li class="list-item"><a href="#installation">Installation</a></li>
+                <!-- <li class="list-item"><a href="#color">Color</a></li> -->
+                <li class="list-item"><a href="#typography">Typography</a></li>
+                <li class="list-item"><a href="#spacing">Spacing</a></li>
+                <li class="list-item"><a href="#grids">Grids</a></li>
+                <!-- <li class="list-item"><a href="#colors">Colors</a></li> -->
+                <p class="txt txt-bold sidenav-heading">Components</p>
+                <li class="list-item"><a href="#alerts">Alerts</a></li>
+                <li class="list-item"><a href="#avatars">Avatars</a></li>
+                <li class="list-item"><a href="#badges">Badges</a></li>
+                <li class="list-item"><a href="#buttons">Buttons</a></li>
+                <li class="list-item"><a href="#cards">Cards</a></li>
+                <li class="list-item"><a href="#dialog">Dialog</a></li>
+                <li class="list-item"><a href="#images">Images</a></li>
+                <li class="list-item"><a href="#inputs">Inputs</a></li>
+                <li class="list-item"><a href="#list">List</a></li>
+                <li class="list-item"><a href="#navigation">Navigation</a></li>
+                <li class="list-item"><a href="#ratings">Ratings</a></li>
+                <li class="list-item"><a href="#snackbar">Snackbar</a></li>
+            </ul>
+        </aside>
+
+        <!-- detailed components -->
+        <div class="components">
+            <!-- Installation starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="installation">Installation</h2>
+
+                    <p class="txt">
+                        Looking to quickly add <strong class="txt txt-primary">RocketUI</strong> to your project? Copy the Link given below and paste it in
+                        the <strong class="txt txt-primary">&lt;head&gt;</strong> tag of your html, above all other style
+                        sheets.
+                    </p>
+                    <script src="https://gist.github.com/prachi-sahani/14d6c773c0de53478da832a38833536c.js"></script>
+                    <br>
+                    <p class="txt">
+                        RocketUI uses <a class="txt txt-primary txt-bold" target="_blank" href="https://fonts.google.com/icons">material icons</a>. Copy the given link
+                        and paste it in the <strong class="txt txt-primary">&lt;head&gt;</strong>  tag before the link
+                        mentioned above.
+                    </p>
+                    <script src="https://gist.github.com/prachi-sahani/d1decb11e7f680e84e8209fe5e077888.js"></script>
+                </div>
+            </div>
+            <!-- Installation ends -->
+            <hr>
+            <!-- Typography starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="typography">Typography</h2>
+                    <p class="txt">
+                        Change the size, weight, and other font properties of the text
+                    </p>
+                    <p class="txt">
+                        This library uses Robot font-family. Different styles can be applied to the text using classes
+                        like <strong class="txt txt-primary">heading</strong>, <strong
+                            class="txt txt-primary">h1</strong>/<strong class="txt txt-primary">h2</strong>/<strong
+                            class="txt txt-primary">h3</strong>/<strong class="txt txt-primary">h4</strong>/<strong
+                            class="txt txt-primary">h5</strong>, <strong class="txt txt-primary">txt</strong>, <strong
+                            class="txt txt-primary">txt-primary</strong>/<strong
+                            class="txt txt-primary">txt-gray</strong>, <strong
+                            class="txt txt-primary">txt-center</strong>/<strong
+                            class="txt txt-primary">txt-left</strong>/<strong class="txt txt-primary">txt-right</strong>
+                        etc.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Headings</h3>
+                    <div class="component-demo">
+                        <h1 class="heading h1">Heading 1</h1>
+                        <h2 class="heading h2">Heading 2</h2>
+                        <h3 class="heading h3">Heading 3</h3>
+                        <h4 class="heading h4">Heading 4</h4>
+                        <h5 class="heading h5">Heading 5</h5>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/07b59871be39cabca136770c75044646.js"></script>
+
+                    <h3 class="heading h3">Text based on size</h3>
+                    <div class="component-demo">
+                        <p class="txt">Normal text</p>
+                        <p class="txt txt-gray">Gray text</p>
+                        <p class="txt txt-lg">Large text</p>
+                        <p class="txt txt-md">Medium text</p>
+                        <p class="txt txt-sm">Small text</p>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/61b44692806737f01d466ee4d7156246.js"></script>
+
+                    <h3 class="heading h3">Text based on weight</h3>
+                    <div class="component-demo">
+                        <p class="txt txt-bold"> Bold text</p>
+                        <p class="txt txt-light">Light text</p>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/27c33a7029779eabc5f8f8feb8012bd3.js"></script>
+
+                    <h3 class="heading h3">Text based on alignment</h3>
+                    <div class="component-demo">
+                        <p class="txt-left">Text in left</p>
+                        <p class="txt-center">Text in center</p>
+                        <p class="txt-right">Text in right</p>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/2e14f6f1007dcc14c6bce6c4e2e1bb1f.js"></script>
+                </div>
+            </div>
+            <!-- Typography ends -->
+            <hr>
+            <!-- Spacing starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="spacing">Spacing</h2>
+                    <p class="txt">
+                        Apply margin and padding to elements
+                    </p>
+                    <p class="txt">
+                        Different margins and paddings can be applied to the elements using class prefixes like <strong
+                            class="txt txt-primary">m-</strong>, <strong class="txt txt-primary">mx-</strong>, <strong
+                            class="txt txt-primary">my-</strong>, <strong class="txt txt-primary">m-auto</strong>,
+                        <strong class="txt txt-primary">mx-auto</strong>, <strong class="txt txt-primary">p-</strong>,
+                        <strong class="txt txt-primary">py-</strong> etc.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Margin and padding</h3>
+                    <div class="component-demo">
+                        <p class="bg-blue txt-white txt-gray m-0">Margin-0</p><br>
+                        <p class="bg-green txt-white txt-gray mx-1">Margin-1</p><br>
+                        <p class="bg-primary txt-white txt-gray my-2">Margin-2</p><br>
+                        <p class="bg-blue txt-white txt-gray p-3">Margin-3</p><br>
+                        <p class="bg-red txt-white txt-gray py-4">Margin-4</p><br>
+                        <p class="bg-primary txt-white txt-gray px-5">Margin-5</p><br>
+                        <p class="bg-green txt-white txt-gray m-auto auto-width">Margin-auto</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Spacing ends -->
+            <hr>
+            <!-- Grid component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="grids">Grids</h2>
+                    <p class="txt">
+                        creates visual consistency between layouts while allowing flexibility across a wide variety of
+                        designs
+                    </p>
+                    <p class="txt">
+                        This library has 2-column and 3-column grid layout.It is built with grid and is fully
+                        responsive. Number of columns covered for different screen sizes can also be modified using
+                        class prefixes like <strong class="txt txt-primary">col-lg-</strong>, <strong
+                            class="txt txt-primary">col-md-</strong> and <strong
+                            class="txt txt-primary">col-sm-</strong>
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">3-Column grid</h3>
+                    <div class="component-demo">
+                        <div class="grid-container grid-3">
+                            <div class="grid-item">Column 1</div>
+                            <div class="grid-item">Column 2</div>
+                            <div class="grid-item">Column 3</div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/d269a767c0e86b8172612ea915cc8f9c.js"></script>
+
+                    <h3 class="heading h3">2-Column grid</h3>
+                    <div class="component-demo">
+                        <div class="grid-container grid-2">
+                            <div class="grid-item">Column 1</div>
+                            <div class="grid-item">Column 2</div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/122540f4700ebd5c52c343ccaa53dea7.js"></script>
+
+                    <h3 class="heading h3">Mix and Match</h3>
+                    <div class="component-demo">
+                        <div class="grid-container grid-3">
+                            <div class="grid-item col-1 col-sm-2">Column 1</div>
+                            <div class="grid-item col-1 col-sm-1">Column 2</div>
+                            <div class="grid-item col-1 col-sm-3">Column 3</div>
+                        </div><br><br>
+                        <div class="grid-container grid-3">
+                            <div class="grid-item col-1 col-sm-3">Column 1</div>
+                            <div class="grid-item col-1 col-sm-3">Column 2</div>
+                            <div class="grid-item col-1 col-sm-3">Column 3</div>
+                        </div><br><br>
+                        <div class="grid-container grid-2">
+                            <div class="grid-item col-1 col-sm-2">Column 1</div>
+                            <div class="grid-item col-1 col-sm-2">Column 2</div>
+                        </div><br><br>
+                        <div class="grid-container grid-2">
+                            <div class="grid-item col-1 col-sm-1">Column 1</div>
+                            <div class="grid-item col-1 col-sm-2">Column 2</div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/3a30ab6c8ed9c504974c3fb3af19fd66.js"></script>
+
+                </div>
+            </div>
+            <!-- Grid component ends -->
+            <hr>
+            <!-- Alert component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="alerts">Alerts</h2>
+                    <p class="txt">
+                        Provide contextual feedback messages for typical user actions with
+                        the handful of available and flexible alert messages
+                    </p>
+                    <p class="txt">
+                        Alerts are available for any length of text along with five color
+                        variants. For proper styling,
+                        <strong class="txt txt-primary">alert</strong> class can be used with other
+                        contextual classes(eg:
+                        <strong class="txt txt-primary">alert-primary</strong>).
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Primary Alerts</h3>
+                    <div class="component-demo">
+                        <div class="alert alert-primary">Primary alert</div>
+                        <br />
+                        <div class="alert alert-primary alert-icon">
+                            <i class="material-icons icon">notifications</i>Primary alert
+                        </div>
+                        <br />
+                        <div class="alert alert-primary alert-fill">Primary alert</div>
+                        <br />
+                        <div class="alert alert-primary alert-fill alert-icon">
+                            <i class="material-icons icon">notifications</i>Primary alert
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/e8f2bd9a2aeaaa2413bddd4fcdd2e75d.js"></script>
+
+                    <h3 class="heading h3">Info Alerts</h3>
+                    <div class="component-demo">
+                        <div class="alert alert-info">Info alert</div>
+                        <br />
+                        <div class="alert alert-info alert-icon">
+                            <i class="material-icons icon">info</i>Info alert
+                        </div>
+                        <br />
+                        <div class="alert alert-info alert-fill">Info alert</div>
+                        <br />
+                        <div class="alert alert-info alert-fill alert-icon">
+                            <i class="material-icons icon">info</i>Info alert
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/98826501cc3dcc337b28338fcf117b83.js"></script>
+
+                    <h3 class="heading h3">Success Alerts</h3>
+                    <div class="component-demo">
+                        <div class="alert alert-success">Success alert</div>
+                        <br />
+                        <div class="alert alert-success alert-icon">
+                            <i class="material-icons icon">check_circle</i>Success alert
+                        </div>
+                        <br />
+                        <div class="alert alert-success alert-fill">Success alert</div>
+                        <br />
+                        <div class="alert alert-success alert-fill alert-icon">
+                            <i class="material-icons icon">check_circle</i>Success alert
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/31db3fadd27b6e9dfb55e1ebf49c4523.js"></script>
+
+                    <h3 class="heading h3">Warning Alerts</h3>
+                    <div class="component-demo">
+                        <div class="alert alert-warn">Warning alert</div>
+                        <br />
+                        <div class="alert alert-warn alert-icon">
+                            <i class="material-icons icon">warning</i>Warning alert
+                        </div>
+                        <br />
+                        <div class="alert alert-warn alert-fill">Warning alert</div>
+                        <br />
+                        <div class="alert alert-warn alert-fill alert-icon">
+                            <i class="material-icons icon">warning</i>Warning alert
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/d56a9fe86f63aa3c391e4671ec3e3f0e.js"></script>
+
+                    <h3 class="heading h3">Danger Alerts</h3>
+                    <div class="component-demo">
+                        <div class="alert alert-danger">Danger alert</div>
+                        <br />
+                        <div class="alert alert-danger alert-icon">
+                            <i class="material-icons icon">error</i>Danger alert
+                        </div>
+                        <br />
+                        <div class="alert alert-danger alert-fill">Danger alert</div>
+                        <br />
+                        <div class="alert alert-danger alert-fill alert-icon">
+                            <i class="material-icons icon">error</i>Danger alert
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/7bbb4e80215e58755e653c04fcde4fb6.js"></script>
+                </div>
+            </div>
+            <!-- alert component ends -->
+            <hr />
+            <!-- avatar component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="avatars">Avatars</h2>
+                    <p class="txt">
+                        Provide a visual representation of a user or entity
+                    </p>
+                    <p class="txt">
+                        An avatar can be circular or square and small, medium or large,
+                        depending on usage. The default is a rounded avatar and requires
+                        <strong class="txt txt-primary">avatar</strong> as the base class. Avatars
+                        can also be grouped or stacked to represent a group of people. It
+                        can be done by wrapping all avatars inside
+                        <strong class="txt txt-primary">avatar-group</strong> and
+                        <strong class="txt txt-primary">avatar-stack</strong> classes.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Rounded Avatars</h3>
+                    <div class="component-demo">
+                        <div class="avatar">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                        <div class="avatar avatar-lg">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                        <div class="avatar avatar-xl">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/53bcdb894a61d65f719e182a5f7a2675.js"></script>
+
+                    <h3 class="heading h3">Square Avatars</h3>
+                    <div class="component-demo">
+                        <div class="avatar avatar-square">
+                            <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/723af1a310cf7c05a3608cbe3cf788d2.js"></script>
+
+                    <h3 class="heading h3">Avatars with icon</h3>
+                    <div class="component-demo">
+                        <div class="avatar avatar-icon">
+                            <i class="material-icons">photo_camera</i>
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/9699561f00a1ef4420213553d0c42713.js"></script>
+
+                    <h3 class="heading h3">Avatars group</h3>
+                    <div class="component-demo">
+                        <div class="avatar-group">
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/da1756547ad51fe62b259ebb171eade2.js"></script>
+
+                    <h3 class="heading h3">Avatars stack</h3>
+                    <div class="component-demo">
+                        <div class="avatar-stack">
+                            <div class="avatar avatar-icon">
+                                <i class="material-icons">add</i>
+                            </div>
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/726d513e87732c64cdcc11643a04e3b8.js"></script>
+                </div>
+            </div>
+            <!--avatar component ends  -->
+            <hr />
+            <!-- badge component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="badges">Badges</h2>
+                    <p class="txt">
+                        Visual indicator for numeric values such as tallies and scores
+                    </p>
+                    <p class="txt">
+                        Badges can be used to draw attention and display statuses or
+                        counts. All types of badges must have
+                        <strong class="txt txt-primary">badge</strong> class. Based on the
+                        requirement, <strong class="txt txt-primary">badge-avatar</strong>,
+                        <strong class="txt txt-primary">badge-icon-sm</strong>,
+                        <strong class="txt txt-primary">badge-icon-md</strong>,
+                        <strong class="txt txt-primary">badge-icon-xl</strong> etc. can be used.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Badges on avatars</h3>
+                    <div class="component-demo">
+                        <div class="badge">
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="badge-avatar badge-offline"></div>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-xs">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="badge-avatar badge-online"></div>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-sm">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="badge-avatar badge-busy"></div>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-md">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="badge-avatar badge-offline"></div>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-lg">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="badge-avatar badge-online"></div>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-xl">
+                                <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar" />
+                            </div>
+                            <div class="badge-avatar badge-busy"></div>
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/8c161a621b189f7e14e19442959b2f8a.js"></script>
+
+                    <h3 class="heading h3">Badges on icons</h3>
+                    <div class="component-demo">
+                        <div class="badge badge-icon-sm">
+                            <i class="material-icons badge-icon">shopping_cart</i>
+                            <div class="badge-icon-text bg-green">5</div>
+                        </div>
+                        &nbsp;
+                        <div class="badge badge-icon-md">
+                            <i class="material-icons badge-icon">email</i>
+                            <div class="badge-icon-text">99+</div>
+                        </div>
+                        &nbsp;
+                        <div class="badge badge-icon-lg">
+                            <i class="material-icons badge-icon">email</i>
+                            <div class="badge-icon-text">99+</div>
+                        </div>
+                    </div>
+
+                    <script src="https://gist.github.com/prachi-sahani/faafcf27aca73fe9743bce03e3d7f424.js"></script>
+                </div>
+            </div>
+            <!-- badge component ends -->
+            <hr />
+            <!-- button component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="buttons">Buttons</h2>
+                    <p class="txt">
+                        Clickable items to perform actions
+                    </p>
+                    <p class="txt">
+                        Buttons can be of various types - basic button, filled/outline buttons, disabled buttons,button
+                        with icons, floating action buttons, link buttons.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Basic buttons</h3>
+                    <div class="component-demo">
+                        <button class="btn-basic">Basic button</button>
+                        <button class="btn-basic" disabled>Basic button</button>
+                        <button class="btn-outline-basic">Basic button</button>
+                        <button class="btn-outline-basic" disabled>Basic button</button>
+                        <a href="" class="btn-link">Link Button</a>
+                        <br><br>
+                        <button class="btn-icon material-icons">shopping_cart</button>
+                        <button class="btn-icon material-icons" disabled>shopping_cart</button>
+                        <button class="btn-fab material-icons">add</button>
+                        <button class="btn-fab material-icons" disabled>arrow_upward</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/2af8a125c5de2bd02a69f425e0cea774.js"></script>
+
+                    <h3 class="heading h3">Primary buttons</h3>
+                    <div class="component-demo">
+                        <button class="btn-basic btn-primary">Primary button</button>
+                        <button class="btn-basic btn-primary" disabled>Primary button</button>
+                        <button class="btn-basic btn-outline-primary">Primary outline button</button>
+                        <button class="btn-basic btn-outline-primary" disabled>Primary outline button</button>
+                        <a href="" class="btn-link btn-link-primary">Link Button</a>
+                        <br><br>
+                        <button class="btn-icon btn-outline-primary material-icons">shopping_cart</button>
+                        <button class="btn-icon btn-outline-primary material-icons" disabled>shopping_cart</button>
+                        <button class="btn-fab btn-primary material-icons">add</button>
+                        <button class="btn-fab btn-primary material-icons" disabled>arrow_upward</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/3ce58ee2329804028740e264efff8d95.js"></script>
+
+                    <h3 class="heading h3">Success buttons</h3>
+                    <div class="component-demo">
+                        <button class="btn-basic btn-success">Success button</button>
+                        <button class="btn-basic btn-success" disabled>Success button</button>
+                        <button class="btn-basic btn-outline-success">Success outline button</button>
+                        <button class="btn-basic btn-outline-success" disabled>Success outline button</button>
+                        <a href="" class="btn-link btn-link-success">Link Button</a>
+                        <br><br>
+                        <button class="btn-icon btn-outline-success material-icons">check</button>
+                        <button class="btn-icon btn-outline-success material-icons" disabled>shopping_cart</button>
+                        <button class="btn-fab btn-success material-icons">check</button>
+                        <button class="btn-fab btn-success material-icons" disabled>arrow_upward</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/2c40f37a14c7d06567bf59be5e04c274.js"></script>
+
+                    <h3 class="heading h3">Danger buttons</h3>
+                    <div class="component-demo">
+                        <button class="btn-basic btn-danger">Danger button</button>
+                        <button class="btn-basic btn-danger" disabled>Danger button</button>
+                        <button class="btn-basic btn-outline-danger">Danger outline button</button>
+                        <button class="btn-basic btn-outline-danger" disabled>Danger outline button</button>
+                        <a href="" class="btn-link btn-link-danger">Link Button</a>
+                        <br><br>
+                        <button class="btn-icon btn-outline-danger material-icons">clear</button>
+                        <button class="btn-icon btn-outline-danger material-icons" disabled>shopping_cart</button>
+                        <button class="btn-fab btn-danger material-icons">clear</button>
+                        <button class="btn-fab btn-danger material-icons" disabled>arrow_upward</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/bf79002e40df1c5ba3e06aed51d6828b.js"></script>
+
+                    <h3 class="heading h3">Info buttons</h3>
+                    <div class="component-demo">
+                        <button class="btn-basic btn-info">Info button</button>
+                        <button class="btn-basic btn-info" disabled>Info button</button>
+                        <button class="btn-basic btn-outline-info">Info outline button</button>
+                        <button class="btn-basic btn-outline-info" disabled>Info outline button</button>
+                        <a href="" class="btn-link btn-link-info">Link Button</a>
+                        <br><br>
+                        <button class="btn-icon btn-outline-info material-icons">info</button>
+                        <button class="btn-icon btn-outline-info material-icons" disabled>shopping_cart</button>
+                        <button class="btn-fab btn-info material-icons">info</button>
+                        <button class="btn-fab btn-info material-icons" disabled>arrow_upward</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/cdbb7c9cdbbd8be8d8a6ce74bd161f8c.js"></script>
+
+                    <h3 class="heading h3">Buttons with icon</h3>
+                    <div class="component-demo">
+                        <button class="btn-outline-basic btn-w-icon btn-sm"><i
+                                class="material-icons icon">shopping_cart</i>Basic button</button>
+                        <button class="btn-basic btn-outline-primary btn-w-icon"><i
+                                class="material-icons icon">shopping_cart</i>Basic button</button>
+                        <button class="btn-basic btn-primary btn-w-icon btn-md"><i
+                                class="material-icons icon">shopping_cart</i>Basic button</button>
+                        <button class="btn-basic btn-outline-danger btn-w-icon btn-lg"><i
+                                class="material-icons icon">shopping_cart</i>Basic button</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/1b0559b9134db908f86c4296dbcdc6ea.js"></script>
+
+                    <h3 class="heading h3">Buttons of different sizes</h3>
+                    <div class="component-demo">
+                        <a href="" class="btn-link btn-sm">Link Button</a>
+                        <a href="" class="btn-link btn-md">Link Button</a>
+                        <a href="" class="btn-link btn-lg">Link Button</a>
+                        <br><br>
+                        <button class="btn-icon material-icons btn-sm">shopping_cart</button>
+                        <button class="btn-icon material-icons btn-md" disabled>shopping_cart</button>
+                        <button class="btn-fab material-icons btn-lg">add</button>
+                        <button class="btn-fab material-icons" disabled>arrow_upward</button>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/9087ef6fda35949548666b3eed0b0746.js"></script>
+                </div>
+            </div>
+            <!-- button component ends -->
+            <hr>
+            <!-- card component starts-->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="cards">Cards</h2>
+                    <p class="txt">
+                        Surfaces that display content and actions on a single topic
+                    </p>
+                    <p class="txt">
+                        All cards will have a common <strong class="txt txt-primary">card</strong> class. Type of cards
+                        included
+                        in this library are - <strong class="txt txt-primary">card-basic</strong>, <strong
+                            class="txt txt-primary">card-hz</strong>, <strong
+                            class="txt txt-primary">card-w-badge</strong>, <strong
+                            class="txt txt-primary">card-overlay</strong> and <strong
+                            class="txt txt-primary">card-dismiss</strong>.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Basic card</h3>
+                    <div class="component-demo">
+                        <div class="card card-basic">
+                            <div class="card-header">
+                                <div class="card-title">Basic Card</div>
+                            </div>
+                            <div class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+                                quia.</div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/c68d0e3795e353ea1033e25cf071fb68.js"></script>
+
+                    <h3 class="heading h3">Card with footer</h3>
+                    <div class="component-demo">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Card with footer</div>
+                                <div class="card-subtitle">Subtitle of card</div>
+                            </div>
+                            <div class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                                neque similique
+                                accusamus eius? Fugiat, tenetur! Officia, libero incidunt? Molestiae porro rem veritatis
+                                quam deleniti,
+                                aperiam praesentium dolorum quidem totam aliquid.</div>
+                            <div class="card-footer">
+                                <div class="action-button">
+                                    <button class="btn-basic btn-primary">READ</button>
+                                    <button class="btn-basic btn-outline-primary">SHARE</button>
+                                </div>
+                                <div class="action-icons">
+                                    <button class="btn-icon material-icons ">favorite</button>
+                                    <button class="btn-icon material-icons ">bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/ee300c6be9abd5f865ed64b5f00785cf.js"></script>
+
+                    <h3 class="heading h3">Horizontal card</h3>
+                    <div class="component-demo">
+                        <div class="card card-hz">
+                            <img class="card-img" src="../../assets/product.jpg"></img>
+                            <div class="card-container">
+                                <div class="card-header">
+                                    <div class="card-title">Horizonatal Card</div>
+                                    <div class="card-subtitle">Subtitle of card</div>
+                                </div>
+                                <div class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Tempore, nulla.</div>
+                                <div class="card-footer">
+                                    <div class="action-button">
+                                        <button class="btn-basic btn-primary btn-w-icon"><i
+                                                class="material-icons">shopping_cart</i>Add to
+                                            cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/a3b9903fbcccbeaa17dfdd6c6598eab8.js"></script>
+
+                    <h3 class="heading h3">Card with image</h3>
+                    <div class="component-demo">
+                        <div class="card" style="max-width: 20rem;">
+                            <!-- width can vary based on requirement -->
+                            <div class="card-header">
+                                <div class="card-title">Card with image</div>
+                                <div class="card-subtitle">Subtitle of card</div>
+                            </div>
+                            <img class="card-img" src="../../assets/cat.jpg"></img>
+                            <div class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                                neque similique
+                                accusamus eius? Fugiat, tenetur! Officia, libero incidunt? Molestiae porro rem veritatis
+                                quam deleniti,
+                                aperiam praesentium dolorum quidem totam aliquid.</div>
+                            <div class="card-footer">
+                                <div class="action-button">
+                                    <button class="btn-basic btn-primary">READ</button>
+                                    <button class="btn-basic btn-outline-primary">SHARE</button>
+                                </div>
+                                <div class="action-icons">
+                                    <button class="btn-icon material-icons ">favorite</button>
+                                    <button class="btn-icon material-icons ">bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/815c00587ba6d970ef801518f806ea80.js"></script>
+
+                    <h3 class="heading h3">Card with overlay</h3>
+                    <div class="component-demo">
+                        <div class="card card-overlay" style="max-width: 20rem;">
+                            <!-- width can vary based on requirement -->
+                            <div class="overlay h2">
+                                Out of Stock
+                            </div>
+                            <img class="card-img" src="../../assets/product.jpg"></img>
+                            <div class="card-header">
+                                <div class="card-title">Card with overlay</div>
+                                <div class="card-subtitle">Subtitle of card</div>
+                            </div>
+                            <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                possimus!</div>
+                            <div class="card-footer">
+                                <div class="action-button">
+                                    <button class="btn-basic btn-primary btn-w-icon"><i
+                                            class="material-icons">shopping_cart</i>Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/cd15192e6719ea1820601ba1662659e1.js"></script>
+
+                    <h3 class="heading h3">Card with badge</h3>
+                    <div class="component-demo">
+                        <div class="card card-w-badge" style="max-width: 20rem;">
+                            <!-- width can vary based on requirement -->
+                            <div class="badge">Bestseller</div>
+                            <img class="card-img" src="../../assets/product.jpg"></img>
+                            <div class="card-header">
+                                <div class="card-title">Card with badge</div>
+                                <div class="card-subtitle">Subtitle of card</div>
+                            </div>
+                            <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                                voluptatem?</div>
+                            <div class="card-footer">
+                                <div class="action-button">
+                                    <button class="btn-basic btn-primary btn-w-icon"><i
+                                            class="material-icons">shopping_cart</i>Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/a1036d5360aa8c6b55692ad59d8b0cde.js"></script>
+
+                    <h3 class="heading h3">Card with dismiss button</h3>
+                    <div class="component-demo">
+                        <div class="card card-dismiss" style="max-width: 20rem;">
+                            <!-- width can vary based on requirement -->
+                            <div class="btn-close material-icons btn-icon btn-basic">
+                                close
+                            </div>
+                            <img class="card-img" src="../../assets/product.jpg"></img>
+                            <div class="card-header">
+                                <div class="card-title">Card with dismiss</div>
+                                <div class="card-subtitle">Subtitle of card</div>
+                            </div>
+                            <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                                possimus!</div>
+                            <div class="card-footer">
+                                <div class="action-button">
+                                    <button class="btn-basic btn-primary btn-w-icon"><i
+                                            class="material-icons">shopping_cart</i>Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/aed71d3f78383d35d3a2a9eb5ed58fcc.js"></script>
+                </div>
+            </div>
+            <!-- card-component ends -->
+            <hr>
+            <!-- dialog component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="dialog">Dialog</h2>
+                    <p class="txt">
+                        Displays content that requires user interaction, in a layer above the page
+                    </p>
+                    <p class="txt">
+                        <strong class="txt txt-primary">dialog-window</strong> class be used as a wrapper to display a
+                        dialog window above rest of the content.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Dialog with header and footer</h3>
+                    <div class="component-demo">
+                        <button class="dialog-open btn-basic btn-primary">Open</button>
+                        <div class="dialog-window">
+                            <div class="dialog-box">
+                                <div class="dialog-header heading h3">
+                                    Dialog Header
+                                </div>
+                                <div class="dialog-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse dolorum porro
+                                    fuga quisquam aperiam hic voluptate atque. Tempore exercitationem, quisquam aperiam
+                                    veniam laudantium soluta maxime aliquam aspernatur adipisci facilis rerum ullam quas
+                                    dolorem? Fuga alias in repellat dolorem, accusamus nisi sapiente doloribus nostrum
+                                    distinctio? Delectus rerum at sequi illum optio, iste voluptas! Provident
+                                    perferendis doloremque suscipit ipsam deserunt nesciunt voluptate voluptatibus,
+                                    incidunt vero iusto. Repudiandae hic laborum placeat optio corporis numquam, sit
+                                    assumenda quos incidunt saepe, adipisci iusto blanditiis dignissimos voluptate
+                                    delectus quaerat. Impedit aspernatur facilis, perspiciatis pariatur quis hic culpa
+                                    repellat accusantium ab autem odio optio? Accusamus, ducimus.
+
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="dialog-close btn-basic btn-outline-primary">Cancel</button>
+                                    <button class="dialog-agree btn-basic btn-primary">Agree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/7c2e8d4333f7dcd33379290948c96043.js"></script>
+                    <script src="https://gist.github.com/prachi-sahani/d377ad3a7531931a43c93038208d2a9c.js"></script>
+                </div>
+            </div>
+            <!-- dialog-component ends -->
+            <hr>
+            <!-- image component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="images">Images</h2>
+                    <p class="txt">
+                        To display images on website
+                    </p>
+                    <p class="txt">
+                        Types of images included: <strong class="txt txt-primary">img-responsive</strong>, <strong
+                            class="txt txt-primary">img-square</strong> and <strong
+                            class="txt txt-primary">img-rounded</strong>.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Responsive image</h3>
+                    <div class="component-demo">
+                        <img src="../../assets/cat.jpg" alt="cat image" class="img-responsive">
+                    </div>
+                    <h3 class="heading h3">Rounded image</h3>
+                    <div class="component-demo">
+                        <img src="../../assets/cat-2.jpg" alt="cat-image-round" class="img-rounded">
+                    </div>
+                    <h3 class="heading h3">Square image</h3>
+                    <div class="component-demo">
+                        <img src="../../assets/cat-2.jpg" alt="cat-image-square" class="img-square">
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/4689d821015c7c46875cd29aa5770386.js"></script>
+
+                </div>
+            </div>
+            <!-- image component ends -->
+            <hr>
+            <!-- input component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="inputs">Inputs</h2>
+                    <p class="txt">
+                        To let users enter and edit text
+                    </p>
+                    <p class="txt">
+                        Use <strong class="txt txt-primary">input-label</strong> and <strong
+                            class="txt txt-primary">input-outline</strong> classes for label nad input tag respectively.
+                        Wrap both of them inside <strong class="txt txt-primary">input-group</strong> class. Similary
+                        you can use <strong class="txt txt-primary">textarea-group</strong> and <strong
+                            class="txt txt-primary">textarea-outline</strong> for text-area.<br> To display error or
+                        success messages for inputs use <strong class="txt txt-primary">msg-success</strong> and <strong
+                            class="txt txt-primary">msg-error</strong> classes.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Basic input field and textarea </h3>
+                    <div class="component-demo">
+                        <div class="input-group">
+                            <label class="input-label" for="username">Username<sup>*</sup></label>
+                            <input class="input-outline w-100" type="text" autocomplete="off" name="username"
+                                placeholder="Enter Username" id="">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label" for="password">Password<sup>*</sup></label>
+                            <input class="input-outline w-100" type="text" name="password" placeholder="Enter Password"
+                                id="">
+                        </div><br>
+                        <div class="textarea-group">
+                            <label for="sometext">Description</label>
+                            <textarea class="textarea-outline" id="sometext" name="sometext" rows="4" cols="50"
+                                placeholder="Add description"></textarea>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/d9e1d5833432122db6ad29d72648a02f.js"></script>
+
+                    <h3 class="heading h3">Input field and textarea with messsages</h3>
+                    <div class="component-demo">
+                        <div class="input-group">
+                            <label class="input-label" for="username">Username<sup>*</sup></label>
+                            <input class="input-outline w-100 input-error" type="text" name="username"
+                                autocomplete="off" placeholder="Enter Username" id="" value="some invalid input">
+                            <small class="msg-error">invalid input</small>
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label" for="password">Password<sup>*</sup></label>
+                            <input class="input-outline w-100 input-success" type="text" name="password"
+                                placeholder="Enter Password" id="" value="some valid input">
+                            <small class="msg-success">valid input</small>
+                        </div>
+                        <br>
+                        <div class="textarea-group">
+                            <label for="sometext">Description</label>
+                            <textarea class="textarea-outline textarea-error" id="sometext" name="sometext" rows="4"
+                                cols="50" placeholder="Add dicussion">some invalid input</textarea>
+                            <small class="msg-error">invalid input</small>
+                        </div>
+                        <div class="textarea-group">
+                            <label for="sometext">Description</label>
+                            <textarea class="textarea-outline textarea-success" id="sometext" name="sometext" rows="4"
+                                cols="50" placeholder="Add dicussion">some valid input</textarea>
+                            <small class="msg-success">valid input</small>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/1fec3f94495c81e9b16ef18387ec8923.js"></script>
+
+                </div>
+            </div>
+            <!-- input component ends -->
+            <hr>
+            <!-- list component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="list">List</h2>
+                    <p class="txt">
+                        Lists are continuous, vertical indexes of text or images
+                    </p>
+                    <p class="txt">
+                        Lists can be bulleted, non-bulleted, inline, stacked etc. By default the list are non-bulleted.
+                        One can use <strong class="txt txt-primary">list-group</strong>, <strong
+                            class="txt txt-primary">list-group-bullteted</strong>, <strong
+                            class="txt txt-primary">list-group-inline</strong> and <strong
+                            class="txt txt-primary">list-group-stacked</strong> classes as pr the requirement. <br>
+                        List items can also have images, avatars and two-line texts. <strong
+                            class="txt txt-primary">list-item</strong>, <strong
+                            class="txt txt-primary">list-item</strong>, <strong
+                            class="txt txt-primary">list-w-icon</strong> and <strong
+                            class="txt txt-primary">list-w-avatar</strong> classes can be used for list items.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Basic list</h3>
+                    <div class="component-demo">
+                        <ul class="list-group">
+                            <li class="list-item">Item 1
+                                <ul class="list-group">
+                                    <li class="list-item">sub item 1
+                                        <ul class="list-group">
+                                            <li class="list-item">super sub item 1</li>
+                                            <li class="list-item">super sub item 2</li>
+                                            <li class="list-item">super sub item 3</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">sub item 2</li>
+                                    <li class="list-item">sub item 3</li>
+                                </ul>
+                            </li>
+                            <li class="list-item">Item 2</li>
+                            <li class="list-item">Item 3</li>
+                            <li class="list-item">Item 4</li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/c093716bf24fdf8a23f02cb2b5c02f20.js"></script>
+
+                    <h3 class="heading h3">Bulleted list</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-bulleted">
+                            <li class="list-item">Item 1
+                                <ul class="list-group-bulleted">
+                                    <li class="list-item">sub item 1
+                                        <ul class="list-group-bulleted">
+                                            <li class="list-item">super sub item 1</li>
+                                            <li class="list-item">super sub item 2</li>
+                                            <li class="list-item">super sub item 3</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">sub item 2</li>
+                                    <li class="list-item">sub item 3</li>
+                                </ul>
+                            </li>
+                            <li class="list-item">Item 2</li>
+                            <li class="list-item">Item 3</li>
+                            <li class="list-item">Item 4</li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/443c5a098c3621d797b0119aac03ae88.js"></script>
+
+                    <h3 class="heading h3">Inline list</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-inline">
+                            <li class="list-item">Item 1</li>
+                            <li class="list-item">Item 2</li>
+                            <li class="list-item">Item 3</li>
+                            <li class="list-item">Item 4</li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/49eaf3c5085ba9d72e22a0f2b209828a.js"></script>
+
+                    <h3 class="heading h3">Basic stacked list</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-stacked">
+                            <li class="list-item">Item 1</li>
+                            <li class="list-item">Item 2</li>
+                            <li class="list-item">Item 3</li>
+                            <li class="list-item">Item 4</li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/41c9a998bd69c7a74165c5d3a212eb4b.js"></script>
+
+                    <h3 class="heading h3">Stacked list with icon</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-stacked">
+                            <li class="list-item list-w-icon"><i class="material-icons list-icon">shopping_bag</i>Item 1
+                            </li>
+                            <li class="list-item list-w-icon"><i class="material-icons list-icon">shopping_bag</i>Item 2
+                            </li>
+                            <li class="list-item list-w-icon"><i class="material-icons list-icon">shopping_bag</i>Item 3
+                            </li>
+                            <li class="list-item list-w-icon"><i class="material-icons list-icon">shopping_bag</i>Item 4
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/cabf70aed177cf5b4d869613507b7ec5.js"></script>
+
+                    <h3 class="heading h3">Stacked list with avatars</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-stacked">
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>Item 1
+                            </li>
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>Item 2
+                            </li>
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>Item 3
+                            </li>
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>Item 4
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/d16ba9b86a6818eaaece9a3bf00e8e85.js"></script>
+
+                    <h3 class="heading h3">Stacked list with two lines</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-stacked">
+                            <li class="list-item">
+                                <p class="txt ">Line 1</p>
+                                <p class="txt txt-sm txt-gray">Subline 1</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="txt">Line 2</p>
+                                <p class="txt txt-sm txt-gray">Subline 2</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="txt">Line 3</p>
+                                <p class="txt txt-sm txt-gray">Subline 3</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/df6fb2c133bdd8685e27ff938b50adfb.js"></script>
+
+                    <h3 class="heading h3">Stacked list with two lines and icons</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-stacked">
+                            <li class="list-item list-w-icon">
+                                <i class="material-icons list-icon">shopping_bag</i>
+                                <div class="list-item-text">
+                                    <p class="txt">Line 1</p>
+                                    <p class="txt txt-sm txt-gray">Subline 1</p>
+                                </div>
+                            </li>
+                            <li class="list-item list-w-icon">
+                                <i class="material-icons list-icon">shopping_bag</i>
+                                <div class="list-item-text">
+                                    <p class="txt">Line 2</p>
+                                    <p class="txt txt-sm txt-gray">Subline 2</p>
+                                </div>
+                            </li>
+                            <li class="list-item list-w-icon">
+                                <i class="material-icons list-icon">shopping_bag</i>
+                                <div class="list-item-text">
+                                    <p class="txt">Line 3</p>
+                                    <p class="txt txt-sm txt-gray">Subline 3</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/7e3c4c66f0f8e1b3f22caa26ae3ea081.js"></script>
+
+                    <h3 class="heading h3">Stacked list with two lines and icons</h3>
+                    <div class="component-demo">
+                        <ul class="list-group-stacked">
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="list-item-text">
+                                    <p class="txt txt-md">Line 1</p>
+                                    <p class="txt txt-sm txt-gray">Subline 1</p>
+                                </div>
+                            </li>
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="list-item-text">
+                                    <p class="txt txt-md">Line 2</p>
+                                    <p class="txt txt-sm txt-gray">Subline 2</p>
+                                </div>
+                            </li>
+                            <li class="list-item list-w-avatar">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img" src="../../assets/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="list-item-text">
+                                    <p class="txt">Line 3</p>
+                                    <p class="txt txt-sm txt-gray">Subline 3</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/cf93a20928d7a0f529979d97e016b21c.js"></script>
+                </div>
+            </div>
+            <!-- list component ends -->
+            <hr>
+            <!-- navbar component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="navigation">Navigation</h2>
+                    <p class="txt">
+                        List of navigation links users that can find in the Header on every page
+                    </p>
+                    <p class="txt">
+                        Navigation bar includes brand name(or logo), list of navigations, actions icons and buttons.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Responsive Navbar</h3>
+                    <div class="component-demo">
+                        <div class="navbar" style="width: 100%;">
+                            <div class="navbar-brand">Navbar</div>
+                            <div class="navbar-nav">
+                                <ul class="list-group-inline navbar-nav-list">
+                                    <li class="list-item">Item 1</li>
+                                    <li class="list-item">Item 2</li>
+                                    <li class="list-item">Item 3</li>
+                                </ul>
+                                <div class="navbar-action">
+                                    <button class="btn-basic btn-primary btn-sm">LOGIN/SIGNUP</button>
+                                    <button class="btn-icon btn-outline-primary material-icons">bookmark</button>
+                                    <button class="btn-icon btn-outline-primary material-icons">shopping_bag</button>
+                                    <button class="btn-icon btn-outline-primary material-icons">account_circle</button>
+                                </div>
+                            </div>
+                            <div class="navbar-menu">
+                                <button
+                                    class="navbar-menu-btn btn-basic btn-outline-primary material-icons btn-md">menu</button>
+                                <ul class="navbar-menu-list list-group-stacked">
+                                    <li class="list-item">Signup/Login</li>
+                                    <li class="list-item">Account</li>
+                                    <li class="list-item">Shopping Bag</li>
+                                    <li class="list-item">Wishlist</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/c34e8be0c73b2063285853dc2e1bdc64.js"></script>
+                </div>
+            </div>
+            <!-- navbar component ends -->
+            <hr>
+            <!-- ratings component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="ratings">Ratings</h2>
+                    <p class="txt">
+                        Provide insight regarding others' opinions and experiences, and can allow the user to submit a
+                        rating of their own
+                    </p>
+                    <p class="txt">
+                        <strong class="txt txt-primary">rating</strong> and <strong
+                            class="txt txt-primary">rating-read-only</strong> classes can be used based on the
+                        application.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Basic rating</h3>
+                    <div class="component-demo">
+                        <div class="rating">
+                            <input type="radio" id="5-stars" name="rating" value="5" />
+                            <label for="5-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="4-stars" name="rating" value="4" />
+                            <label for="4-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="3-stars" name="rating" value="3" />
+                            <label for="3-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="2-stars" name="rating" value="2" />
+                            <label for="2-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="1-star" name="rating" value="1" />
+                            <label for="1-star" class="star"><i class="material-icons">star</i></label>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/274ea807703c39d6a1e781569e2edea4.js"></script>
+
+                    <h3 class="heading h3">Read-only rating</h3>
+                    <div class="component-demo">
+                        <div class="rating-read-only">
+                            <input type="radio" id="5-stars" name="rating-read-only" value="5" disabled>
+                            <label for="5-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="4-stars" name="rating-read-only" value="4" disabled>
+                            <label for="4-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="3-stars" name="rating-read-only" value="3" checked disabled>
+                            <label for="3-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="2-stars" name="rating-read-only" value="2" disabled>
+                            <label for="2-stars" class="star"><i class="material-icons">star</i></label>
+                            <input type="radio" id="1-star" name="rating-read-only" value="1" disabled>
+                            <label for="1-star" class="star"><i class="material-icons">star</i></label>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/6b709a7faa1c38518cef10eae2aae61c.js"></script>
+                </div>
+            </div>
+            <!-- ratings component ends -->
+            <hr>
+            <!-- snackbar component starts -->
+            <div class="component-details">
+                <div class="component-description">
+                    <h2 class="heading h2" id="snackbar">Snackbar</h2>
+                    <p class="txt">
+                        Serves as a feedback & confirmation mechanism after the user takes an action
+                    </p>
+                    <p class="txt">
+                        All snackbars will have <strong class="txt txt-primary">snackbar</strong> class. Snackbars can
+                        be positioned using <strong class="txt txt-primary">snackbar-top-right</strong>, <strong
+                            class="txt txt-primary">snackbar-top-left</strong>, <strong
+                            class="txt txt-primary">snackbar-top-center</strong>, <strong
+                            class="txt txt-primary">snackbar-bottom-right</strong>, <strong
+                            class="txt txt-primary">snackbar-bottom-left</strong> and <strong
+                            class="txt txt-primary">snackbar-bottom-center</strong> classes.
+                    </p>
+                </div>
+                <div class="component-examples">
+                    <h3 class="heading h3">Snackbar in bottom-left corner</h3>
+                    <div class="component-demo">
+                        <button class="snackbar-open-bl btn-basic btn-primary">Open Snackbar</button>
+                        <div class="snackbar snackbar-bottom-left">
+                            <div class="snackbar-text">
+                                Hi! I am a snackbar
+                            </div>
+                            <div class="snackbar-actions">
+                                <button class="snackbar-close btn btn-icon material-icons btn-sm">close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/f1ef3fc2289e1e61fa81a0ffae2c5f30.js"></script>
+                    <script src="https://gist.github.com/prachi-sahani/591764f629b7936b6ff12799a16c3fde.js"></script>
+                </div>
+            </div>
+            <!-- snackbar component ends -->
+
+        </div>
+    </main>
+
+    <!-- scroll to top fab -->
+    <div class="scroll-to-top">
+        <button class="btn-fab btn-primary material-icons">arrow_upward</button>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="txt">Created by Prachi Sahani</p>
+        <ul class="list-group-inline">
+            <li class="list-item">
+                <a href=""><img class="footer-icons" src="../assets/github-footer.png" alt="" /></a>
+            </li>
+            <li class="list-item">
+                <a href=""><img class="footer-icons" src="../assets/twitter.png" alt="" /></a>
+            </li>
+            <li class="list-item">
+                <a href=""><img class="footer-icons" src="../assets/linkedin.png" alt="" /></a>
+            </li>
+        </ul>
+        <!-- <p class="txt">&copy; 2022</p> -->
+    </footer>
+
+    <script src="./documentation.js"></script>
+</body>
+
+</html>
