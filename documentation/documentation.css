@@ -22,8 +22,7 @@ hr {
 .navbar-brand-doc {
   margin-bottom: 0;
   padding: 0 0.25rem;
-  height: 2.8125rem; /* converted 45px to rem*/
-
+  height: 2.8rem; /* converted 45px to rem*/
 }
 
 .navbar-action-doc {
