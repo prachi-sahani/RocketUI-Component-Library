@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-brand-doc {
-  height: 45px;
+  height: 2.8125rem; /* converted 45px to rem*/
 }
 
 .navbar-menu-list-doc .list-item a, .navbar-menu-list-doc .list-item a:visited{
@@ -124,7 +124,7 @@ body {
   }
 
   .img-hero {
-    max-width: 100%;
+    width: 100%;
   }
 
   .img-hero2,
