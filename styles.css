@@ -1,5 +1,6 @@
 body {
   overflow-wrap: break-word;
+  scroll-behavior: smooth;
 }
 
 .navbar-doc {

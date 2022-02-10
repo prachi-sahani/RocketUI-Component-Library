@@ -81,6 +81,7 @@ hr {
   height: calc(100vh - 4rem);
   overflow-y: auto;
   padding: 0.5rem;
+  scroll-behavior: smooth;
 }
 
 .component-details {
