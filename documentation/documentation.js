@@ -10,7 +10,7 @@ const dialogClose = document.querySelector(".dialog-close");
 const snackbarOpenBL = document.querySelector(".snackbar-open-bl");
 const snackbarBL = document.querySelector(".snackbar-bottom-left");
 const snackbarClose = document.querySelector(".snackbar-close");
-
+const navListItem = document.querySelectorAll(".nav-list-item");
 
 // show scroll to top button only when user scrolls more than 20px in div
 componentsDiv.onscroll = () => showScrollToTop();
@@ -35,6 +35,14 @@ sidenavMenuBtn.addEventListener("click", () => {
     sidenavMenuBtn.style.transform = "rotate(180deg)";
   }
 });
+
+navListItem.forEach((element) => element.addEventListener("click", () => {
+  const x = window.matchMedia("(max-width: 600px)");
+  if(x.matches){
+    sidenav.style.display = 'none';
+    sidenavMenuBtn.style.transform = "rotate(360deg)";
+  }
+}));
 
 navbarMenuBtn.addEventListener("click", () => {
   if ((navbarMenuList.style.display === "block")) {
