@@ -22,7 +22,7 @@ hr {
 .navbar-brand-doc {
   margin-bottom: 0;
   padding: 0 0.25rem;
-  height: 45px;
+  height: 2.8125rem; /* converted 45px to rem*/
 
 }
 
@@ -54,7 +54,7 @@ hr {
 .sidenav {
   height: calc(100vh - 4.625rem);
   overflow-y: auto;
-  flex-basis: 240px;
+  flex-basis: 15rem;
   flex-shrink: 0;
   box-shadow: 1px 1px 2px 1px var(--black-050);
 }
