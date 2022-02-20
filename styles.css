@@ -1,0 +1,145 @@
+body {
+  overflow-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+.navbar-doc {
+  border-bottom: 2px solid var(--primary-900);
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.img-github {
+  height: 1.5rem;
+}
+
+.navbar-brand-doc {
+  margin-bottom: 0;
+  padding: 0 0.25rem;
+}
+
+.navbar-action-doc {
+  padding: 0;
+}
+
+.btn-navbar-doc {
+  border: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.btn-navbar-doc:hover {
+  background-color: var(--primary-050);
+  color: var(--primary-900);
+}
+
+.navbar-brand-doc {
+  height: 2.8125rem; /* converted 45px to rem*/
+}
+
+.navbar-menu-list-doc .list-item a, .navbar-menu-list-doc .list-item a:visited{
+  text-decoration: none;
+  color: var(--primary-900);
+}
+
+.footer {
+  background-color: var(--primary-900);
+  text-align: center;
+  color: var(--black-050);
+  padding: 0.5rem;
+}
+
+.footer-icons {
+  height: 2rem;
+}
+
+.content {
+  margin: 1rem;
+}
+
+.landing-page-part1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.img-hero {
+  width: 40%;
+  margin: 1rem 0;
+}
+
+.subtitle {
+  width: 55%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.btn-get-started {
+  width: fit-content;
+  margin: 1rem 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.landing-page-part2 {
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.img-hero2 {
+  width: 45%;
+}
+
+.features-list {
+  width: 50%;
+  padding: 0 3rem;
+  text-align: left;
+}
+
+.features-list .list-group-stacked {
+  margin: auto;
+  width: 100%;
+}
+
+.features-list .list-item {
+  width: 100%;
+}
+
+.list-img {
+  height: 3rem;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-menu-btn-doc {
+    padding: 0.25rem;
+  }
+
+  .img-hero {
+    width: 100%;
+  }
+
+  .img-hero2,
+  .features-list {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+
+  .navbar-menu-list-doc {
+    display: none;
+  }
+}

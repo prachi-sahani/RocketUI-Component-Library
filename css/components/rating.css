@@ -1,0 +1,40 @@
+@import url(../base/reset.css);
+@import url(../utilities/color.css);
+@import url(../components/list.css);
+
+.rating,
+.rating-read-only {
+  display: flex;
+  flex-direction: row-reverse; /* to turn sibling starts to orange */
+  justify-content: flex-end;
+  text-align: center;
+}
+
+/* hide input checkboxes */
+.rating input,
+.rating-read-only input {
+  display: none;
+}
+
+/* styling for stars icons */
+.rating label,
+.rating-read-only label {
+  color: var(--black-400);
+  cursor: pointer;
+}
+
+/* styling for stars when checked */
+.rating :checked ~ label,
+.rating-read-only :checked ~ label {
+  color: var(--orange-300);
+}
+
+/* styling for stars on hover */
+.rating label:hover,
+.rating label:hover ~ label {
+  color: var(--orange-200);
+}
+
+.rating-read-only {
+  pointer-events: none;
+}

@@ -23,7 +23,7 @@
 }
 
 .input-outline:focus, .textarea-outline:focus{
-    border-color: var(--blue-800);   
+    border-color: var(--primary-800);   
 }
 
 .input-error, .textarea-error, .input-error:focus, .textarea-error:focus{

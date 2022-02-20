@@ -1,0 +1,61 @@
+@import url(../base/reset.css);
+@import url(../utilities/color.css);
+@import url(../components/avatar.css);
+@import url(../helpers/typography.css);
+
+/* styling for non-bulleted list and inline list*/
+.list-group,
+.list-group-bulleted {
+  padding-left: 1.5rem;
+}
+
+.list-group .list-item {
+  padding: 8px 0;
+}
+
+.list-group-inline .list-item {
+  display: inline-block;
+  padding: 8px;
+}
+
+/* styling for bulleted list */
+.list-group-bulleted {
+  list-style-type: disc;
+}
+
+.list-group-bulleted ul {
+  list-style-type: circle;
+}
+.list-group-bulleted ul ul {
+  list-style-type: square;
+}
+
+.list-group-bulleted .list-item {
+  padding: 4px 0;
+}
+
+/* stacked lists for notifications */
+.list-group-stacked .list-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.list-group-stacked .list-item:hover {
+  background-color: var(--black-050);
+}
+.list-group-stacked .list-item:hover ul {
+  background-color: var(--black-inverted);
+}
+
+/* list with icons and avatars */
+.list-group-stacked .list-w-icon,
+.list-group-stacked .list-w-avatar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.list-w-icon .list-icon {
+  font-size: 1.25em;
+}
