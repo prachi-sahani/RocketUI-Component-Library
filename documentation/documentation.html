@@ -23,7 +23,8 @@
                 <a href="/" class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
                     <i class="material-icons">home</i>Home
                 </a>
-                <a href="https://github.com/prachi-sahani/component-library" class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
+                <a href="https://github.com/prachi-sahani/component-library"
+                    class="btn-navbar-doc btn-navbar btn-basic btn-outline-primary btn-w-icon">
                     <img src="../assets/github-nav.png" alt="" class="img-github" />Github
                 </a>
             </div>
@@ -108,7 +109,7 @@
                         Change the size, weight, and other font properties of the text
                     </p>
                     <p class="txt">
-                        This library uses Robot font-family. Different styles can be applied to the text using classes
+                        This library uses Roboto font-family. Different styles can be applied to the text using classes
                         like <strong class="txt txt-primary">heading</strong>, <strong
                             class="txt txt-primary">h1</strong>/<strong class="txt txt-primary">h2</strong>/<strong
                             class="txt txt-primary">h3</strong>/<strong class="txt txt-primary">h4</strong>/<strong
@@ -944,7 +945,12 @@
                         you can use <strong class="txt txt-primary">textarea-group</strong> and <strong
                             class="txt txt-primary">textarea-outline</strong> for text-area.<br> To display error or
                         success messages for inputs use <strong class="txt txt-primary">msg-success</strong> and <strong
-                            class="txt txt-primary">msg-error</strong> classes.
+                            class="txt txt-primary">msg-error</strong> classes.<br><br>
+                        For radio buttons and checkboxes with label, wrap <strong
+                            class="txt txt-primary">radio-input-group</strong> and <strong
+                            class="txt txt-primary">checkbox-input-group</strong> inside <strong
+                            class="txt txt-primary">input-radio</strong> and <strong
+                            class="txt txt-primary">input-checkbox</strong> respectively.
                     </p>
                 </div>
                 <div class="component-examples">
@@ -997,6 +1003,37 @@
                         </div>
                     </div>
                     <script src="https://gist.github.com/prachi-sahani/1fec3f94495c81e9b16ef18387ec8923.js"></script>
+
+                    <h3 class="heading h3">Radio button and checkbox</h3>
+                    <div class="component-demo">
+                        <p class="checkbox-input-group">
+                            <input class="input-checkbox" type="checkbox" name="checkbox" value="">
+                            <label for="checkbox">Checkbox</label>
+                        </p>
+                        <br>
+                        <p class="radio-input-group">
+                            <input class="input-radio" type="radio" name="radio-button" value="">
+                            <label for="radio-button">Radio button</label>
+                        </p>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/0f26b66e489cf0cf94266c71696cf99b.js"></script>
+
+                    <h3 class="heading h3">Range Slider</h3>
+                    <div class="component-demo">
+                        <input class="input-range" value="100" type="range" name="simple-slider" step="20" min="0"
+                            max="100">
+                        <br>
+                        <input class="input-range" value="10" type="range" list="tickmarks" step="20" min="0" max="100">
+                        <datalist id="tickmarks">
+                            <option value="0"></option>
+                            <option value="20"></option>
+                            <option value="40"></option>
+                            <option value="60"></option>
+                            <option value="80"></option>
+                            <option value="100"></option>
+                        </datalist>
+                    </div>
+                    <script src="https://gist.github.com/prachi-sahani/a0588ed94428996b8f584a062d09ccf4.js"></script>
 
                 </div>
             </div>
