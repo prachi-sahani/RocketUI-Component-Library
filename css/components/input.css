@@ -42,3 +42,27 @@
     color: var(--green-700);
 }
  
+/* styling for radio button, checkbox and range slider */
+.radio-input-group,
+.checkbox-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.input-radio,
+.input-checkbox {
+  height: 1em;
+  width: 1em;
+}
+
+.input-radio:checked,
+.input-checkbox:checked,
+.input-range {
+  accent-color: var(--primary-900);
+}
+ 
+.input-range{
+    width: 100%;
+}
