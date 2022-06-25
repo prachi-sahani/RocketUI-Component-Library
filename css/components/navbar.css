@@ -80,8 +80,8 @@
     background-color: var(--black-inverted);
   }
 
-  .navbar-menu-list .list-item {
-    padding: 0.5rem 1rem;
+  .navbar-menu-list .list-item a{
+    padding-right: 2rem;
   }
 
   .navbar-menu-list .list-item:hover {
